@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE9F0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBE9F0"
+        android:orientation="vertical"
+        tools:context=".tickets_information">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="#18325D"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:text="معلومات تذاكر الرحلة"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#18325D"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/fontstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="الرقم و الباركود الخاص برحلتك" />
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/fontstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center"
+                    android:text="الرقم : "
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/number"
+                    style="@style/fontstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/fontstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="الباركود"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/barcode"
+                android:layout_width="235dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/download"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/download"
+            android:onClick="saveOnClick"
+            android:text="تحميل"
+            android:textColor="#18325D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/instructions_style"
+            android:text=" > يجب استخدام الرقم و الباركود خلال يوم واحد فقط." />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/instructions_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" > قم بإدخال الرقم إلى آلة تذاكر الحقائب للحصول على تذكرة الحقيبة، ثم إلصق التذكرة على الحقيبة." />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" > يتم مسح الباركود نفسه من قبل موظف الباص و موظف ضريبة المغادرة."
+            style="@style/instructions_style"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
